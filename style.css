@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#178c90;
+    color:white
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    margin-bottom: 90px;
+    margin-top:90px;
+}
+
+h1{
+    margin-bottom: 25px;
+}
+
+
+table{
+    border-collapse: collapse;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+th,td,tr{
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+tr{
+    border-right: none;
+}
+
+td,th{
+    box-sizing: border-box;
+}
+
+th{
+    padding: 10px;
+    font-size: 16px;
+    font-family: system-ui,serif;
+}
+
+input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.game_sec{
+    width: 280px;
+    background: #0b868a;
+}
+
+.input{
+    padding: 10px;
+    border: none;
+    text-align: center;
+}
+
+.score{
+    width: 50px;
+}
+.bg-black{
+    background-color: black;
+}
+
+.result{
+    background: #010308;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.carts{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-bottom:20px;
+}
+
+.carts img{
+    width: 19%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 2px;
+}
+
+.carts_active{
+    background: greenyellow;
+}
+
+.img_active{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.num_count{
+    width: 65px;
+    display: flex;
+    font-style: italic;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+.num_count div>img{
+    margin-left: 5px;
+}
+
+.num_count div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.num_count_other{
+    justify-content: center!important;
+}
+
+.center{
+    text-align: center;
+}
+
+.recycle{
+    border: none!important;
+    cursor: pointer;
+}
+
+.recycle_title{
+    cursor: default;
+}
+
+.kaput_active,.kris_active,.kris_sur_active{
+    background-color: greenyellow;
+}
+
+.num_info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.num_info img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px;
+    margin-top: 10px;
+}
+
+.num_info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options::first-letter{
+    color: blue;
+}
+
+.options{
+    font-weight: bold;
+}
+
+.add_button{
+    background-color: green;
+    color: white;
+    width: 100px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 1px 1px greenyellow;
+    cursor: pointer;
+}

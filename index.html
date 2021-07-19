@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BELOTE CALCULATOR</title>
+</head>
+<body>
+
+<main>
+    <h1 class="center">BELOTE CALCULATOR</h1>
+    <section class="game_sec">
+        <div class="carts">
+            <img class="carts_active" src="images/sirt.png" alt="sirt">
+            <img src="images/xar.png" alt="xar">
+            <img src="images/xach.png" alt="xach">
+            <img src="images/qyap.png" alt="qyap">
+            <img src="images/tuz.png" alt="tuz">
+        </div>
+        <div class="num_info">
+            <div>
+               Կապուտ
+                <img class="kaput" src="images/kaput.png" alt="kaput" data-id = 'K'>
+            </div>
+            <div>
+                Քուանշ
+                <img class="kris" src="images/kris.png" alt="kris" data-id="Q">
+            </div>
+            <div>
+                Սուր
+                <img class="sur" src="images/sur.png" alt="sur" data-id="S">
+            </div>
+            
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>TEAM 1</th>
+                <th>TEAM 2</th>
+                <th class="score">%</th>
+                <th class="recycle recycle_title"><img class="img_active" src="images/recycle.png" alt="recycle"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="number" class="first" min="0" max="301"></td>
+                <td><input type="number" class="second" min="0" max="301"></td>
+                <td><input type="number" class="num"></td>
+                <td class="bg-black"></td>
+            </tr>
+            </tbody>
+            <tbody>
+            <tr class="result">
+                <td><div class="input first_count">0</div></td>
+                <td><div class="input second_count">0</div></td>
+                <td><div class="num_count input num_count_other">%</div></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button class="add_button">ADD</button>
+    </section>
+</main>
+<script src="lib/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
